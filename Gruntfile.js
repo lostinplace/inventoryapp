@@ -1,11 +1,15 @@
 function gruntConfig(grunt) {
   'use strict';
 
+  require('load-grunt-tasks')(grunt);
+
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-nodemon');
   grunt.loadNpmTasks('grunt-node-inspector');
   grunt.loadNpmTasks('grunt-jasmine-node');
+  grunt.loadNpmTasks('grunt-concurrent');
+  
 
   var settings = {
     nodemon: {
@@ -45,7 +49,11 @@ function gruntConfig(grunt) {
     watch: {
     },
     'node-inspector': {
-      dev: {}
+      dev: {
+        options: {
+          'save-live-edit': true,
+        }
+      }
     },
     jasmine_node: {
       options: {
@@ -61,6 +69,14 @@ function gruntConfig(grunt) {
         }
       },
       all: ['test/server/']
+    },
+    concurrent: {
+      dev: {
+        tasks: ['nodemon:dev', 'node-inspector:dev'],
+        options: {
+          logConcurrentOutput: true
+        }
+      }
     }
   };
 
@@ -68,7 +84,7 @@ function gruntConfig(grunt) {
   grunt.initConfig(settings);
 
   // Default task.
-  grunt.registerTask('dev', ['nodemon:dev','node-inspector:dev']);
+  grunt.registerTask('dev', ['concurrent']);
   grunt.registerTask('test', ['jasmine_node']);
 
 }

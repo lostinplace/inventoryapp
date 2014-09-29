@@ -14,11 +14,13 @@
     "jasmine": "^2.0.1"
   },
   "devDependencies": {
+    "grunt-concurrent": "^1.0.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-node-inspector": "^0.1.5",
     "grunt-nodemon": "^0.3.0",
     "jasmine": "^2.0.1",
-    "jasmine-node": "^1.14.5"
+    "jasmine-node": "^1.14.5",
+    "load-grunt-tasks": "^0.6.0"
   }
 }
