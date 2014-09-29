@@ -1,0 +1,86 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/cwheeler/.nvm/v0.10.32/bin/node',
+1 verbose cli   '/Users/cwheeler/.nvm/v0.10.32/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'crunt-cli' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ 'crunt-cli', null ]
+5 verbose cache add name=undefined spec="crunt-cli" args=["crunt-cli",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'crunt-cli',
+6 verbose parsed url   path: 'crunt-cli',
+6 verbose parsed url   href: 'crunt-cli' }
+7 silly lockFile 576f611a-crunt-cli crunt-cli
+8 verbose lock crunt-cli /Users/cwheeler/.npm/576f611a-crunt-cli.lock
+9 silly lockFile 576f611a-crunt-cli crunt-cli
+10 silly lockFile 576f611a-crunt-cli crunt-cli
+11 verbose addNamed [ 'crunt-cli', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile c5a34ba2-crunt-cli crunt-cli@
+14 verbose lock crunt-cli@ /Users/cwheeler/.npm/c5a34ba2-crunt-cli.lock
+15 silly addNameRange { name: 'crunt-cli', range: '*', hasData: false }
+16 verbose request where is /crunt-cli
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 7fd4b53e5d9b5638
+19 verbose url raw /crunt-cli
+20 verbose url resolving [ 'https://registry.npmjs.org/', './crunt-cli' ]
+21 verbose url resolved https://registry.npmjs.org/crunt-cli
+22 verbose request where is https://registry.npmjs.org/crunt-cli
+23 info trying registry request attempt 1 at 08:50:44
+24 http GET https://registry.npmjs.org/crunt-cli
+25 http 404 https://registry.npmjs.org/crunt-cli
+26 verbose headers { date: 'Sun, 28 Sep 2014 12:50:45 GMT',
+26 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 verbose headers   'content-type': 'application/json',
+26 verbose headers   'cache-control': 'max-age=0',
+26 verbose headers   'content-length': '52',
+26 verbose headers   'accept-ranges': 'bytes',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   age: '0',
+26 verbose headers   'x-served-by': 'cache-atl6227-ATL',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'x-timer': 'S1411908644.762450,VS0,VE318',
+26 verbose headers   'keep-alive': 'timeout=10, max=50',
+26 verbose headers   connection: 'Keep-Alive' }
+27 silly registry.get cb [ 404,
+27 silly registry.get   { date: 'Sun, 28 Sep 2014 12:50:45 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=0',
+27 silly registry.get     'content-length': '52',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-atl6227-ATL',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1411908644.762450,VS0,VE318',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly lockFile c5a34ba2-crunt-cli crunt-cli@
+29 silly lockFile c5a34ba2-crunt-cli crunt-cli@
+30 error 404 404 Not Found: crunt-cli
+30 error 404
+30 error 404 'crunt-cli' is not in the npm registry.
+30 error 404 You should bug the author to publish it
+30 error 404
+30 error 404 Note that you can also install from a
+30 error 404 tarball, folder, or http url, or git url.
+31 error System Darwin 13.3.0
+32 error command "/Users/cwheeler/.nvm/v0.10.32/bin/node" "/Users/cwheeler/.nvm/v0.10.32/bin/npm" "install" "-g" "crunt-cli"
+33 error cwd /Users/cwheeler/dev/git/inventoryapp
+34 error node -v v0.10.32
+35 error npm -v 1.4.28
+36 error code E404
+37 verbose exit [ 1, true ]

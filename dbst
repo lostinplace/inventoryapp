@@ -1,0 +1,1 @@
+node-debug -p 8081 -d 5859  node_modules/jasmine-node/lib/jasmine-node/cli.js test/server
