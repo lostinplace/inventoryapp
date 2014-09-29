@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="Index Router" errors="0" tests="1" failures="0" time="0.004" timestamp="2014-09-28T23:10:29">
-  <testcase classname="Index Router" name="should have an index route" time="0.003"></testcase>
-</testsuite>
-</testsuites>
